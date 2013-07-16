@@ -1,0 +1,164 @@
+{
+  "bounds": [
+    -120.646,
+    35.3042,
+    -120.3878,
+    35.4847
+  ],
+  "center": [
+    -120.5135,
+    35.3952,
+    12
+  ],
+  "format": "png",
+  "interactivity": false,
+  "minzoom": 8,
+  "maxzoom": 17,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -120.585040712,
+        35.34661090760001,
+        -120.412072076,
+        35.4405379522
+      ],
+      "id": "LND_SurfaceEstate",
+      "class": "",
+      "Datasource": {
+        "file": "https://raw.github.com/SLUGIS/slugisdata/master/CountywidePreAttack/Parkhill_LND_SurfaceEstate.geojson"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "LND_SurfaceEstate"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        -120.58085597699998,
+        35.3475745474,
+        -120.435273889,
+        35.4377008364
+      ],
+      "id": "ICS_polygons",
+      "class": "",
+      "Datasource": {
+        "file": "https://raw.github.com/SLUGIS/slugisdata/master/CountywidePreAttack/ICS_polygons.geojson"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "ICS_polygons"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -120.56205956400001,
+        35.3593525007,
+        -120.445290341,
+        35.428021538900005
+      ],
+      "id": "ICS_lines",
+      "class": "",
+      "Datasource": {
+        "file": "https://raw.github.com/SLUGIS/slugisdata/master/CountywidePreAttack/ICS_lines.geojson"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "ICS_lines"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -120.583263415,
+        35.3489842661,
+        -120.43807650699999,
+        35.4427567173
+      ],
+      "id": "Gates",
+      "class": "",
+      "Datasource": {
+        "file": "https://raw.github.com/SLUGIS/slugisdata/master/CountywidePreAttack/GatesParkhill.geojson"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "Gates"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -120.603515989,
+        35.3359132588,
+        -120.423955527,
+        35.4398874341
+      ],
+      "id": "ICS_points",
+      "class": "",
+      "Datasource": {
+        "file": "https://raw.github.com/SLUGIS/slugisdata/master/CountywidePreAttack/ICS_points.geojson"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "ICS_points"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -120.85444001300002,
+        35.2621362285,
+        -119.450824246,
+        35.4034385545
+      ],
+      "id": "PowerLines",
+      "class": "",
+      "Datasource": {
+        "file": "https://raw.github.com/SLUGIS/slugisdata/master/CountywidePreAttack/PowerLinesParkhill.geojson"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "PowerLines"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -120.533740709,
+        35.3686135869,
+        -120.449148176,
+        35.4278944388
+      ],
+      "id": "RoadsHazardous",
+      "class": "",
+      "Datasource": {
+        "file": "https://raw.github.com/SLUGIS/slugisdata/master/CountywidePreAttack/RoadsHazardousParkhill.geojson"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "RoadsHazardous"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "ParkhillPreAttack",
+  "description": "This is the Parkhill Area PreAttack Plan, ported to TileMill/MapBox",
+  "attribution": "CAL FIRE / San Luis Obispo County Fire"
+}
