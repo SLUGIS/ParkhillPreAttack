@@ -12,16 +12,13 @@ Map {
 }
 
 #Gates {
-  marker-width:6;
-  marker-fill:#f45;
-  marker-line-color:#813;
-  marker-allow-overlap:true;
+  marker-file: url('http://preattacks.s3.amazonaws.com/gate.png');
+  marker-transform: scale(0.4, 0.4);
 }
 
 
-#ICS_lines {
-  line-width:1;
-  line-color:#168;
+#ICS_lines [type='Completed Dozer Line'] {
+  line-pattern-file: url('http://preattacks.s3.amazonaws.com/CompletedDozerLine.png');
 }
 
 
@@ -34,18 +31,46 @@ Map {
 
 
 #ICS_polygons {
-  line-color:#594;
-  line-width:0.5;
-  polygon-opacity:1;
-  polygon-fill:#ae8;
+  [name='Behlman Plan'] {
+    line-color:#faff00;
+	line-width:3.0;
+	text-name:[name];
+	text-face-name:'Century Gothic Bold';
+    text-fill:#FFFF73;
+    text-halo-fill:#4E4E4E;
+    text-halo-radius:2;
+	text-size:12;
+  }
+  [name='Salinas Plan'] {
+    line-color:#ff6600;
+	line-width:3.0;
+	text-name:[name];
+	text-face-name:'Century Gothic Bold';
+	text-size:12;
+  }
+  [name='Huer Huero Plan'] {
+    line-color:#3692ca;
+	line-width:3.0;
+	text-name:[name];
+	text-face-name:'Century Gothic Bold';
+	text-size:12;
+  }
+  [name='Las Pilitas Plan'] {
+    line-color:#ae8;
+	line-width:3.0;
+	text-name:[name];
+	text-face-name:'Century Gothic Bold';
+	text-size:12;
+  }
 }
 
-
 #LND_SurfaceEstate {
-  line-color:#594;
-  line-width:0.5;
-  polygon-opacity:1;
-  polygon-fill:#ae8;
+  [lnd_agency='Bureau of Land Management'] {
+    line-color:#919191;
+    line-width:0.5;
+    polygon-opacity:0.6;
+    polygon-fill:#FFE292;
+    }
 }
 
 
