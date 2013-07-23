@@ -12,25 +12,44 @@ Map /*{
 }*/
 
 #Gates {
-  marker-file: url('http://preattacks.s3.amazonaws.com/gate.png');
+  marker-file: url('http://preattacks.s3.amazonaws.com/Gate.png');
   marker-transform: scale(0.4, 0.4);
 }
 
 
-#ICS_lines [type='Completed Dozer Line'] {
-  line-pattern-file: url('http://preattacks.s3.amazonaws.com/CompletedDozerLine.png');
+#ICS_lines {
+  [type='Completed Dozer Line'] {
+    line-pattern-file: url('http://preattacks.s3.amazonaws.com/CompletedDozerLine.png');
+  }
+  [type='Proposed Dozer Line'] {
+    line-color:#000;
+    line-width:2;
+    line-dasharray:3;
+    line-cap:round;
+  }
 }
-
 
 #ICS_points {
   [type='Safe Refuge'] {
     marker-file: url('http://preattacks.s3.amazonaws.com/SafeRefuge.png');
-    marker-transform: scale(3,3);
     }
-  marker-width:6;
-  marker-fill:#f45;
-  marker-line-color:#813;
-  marker-allow-overlap:true;
+  [type='Incident Command Post'] {
+    marker-file: url('http://preattacks.s3.amazonaws.com/IncidentCommandPost.png');
+    }
+  [type='Staging Area'] {
+    marker-file: url('http://preattacks.s3.amazonaws.com/StagingArea.png');
+    }
+  [type='Helibase'] {
+    marker-file: url('http://preattacks.s3.amazonaws.com/Helibase.png');
+    }
+  [type='Water Source'] {
+    marker-file: url('http://preattacks.s3.amazonaws.com/WaterSource.png');
+    }
+  [type='Helispot'] {
+    marker-width:12;
+    marker-fill:#4473DC;
+    marker-line-color:#fff;
+    }
 }
 
 
@@ -84,6 +103,12 @@ Map /*{
     polygon-opacity:0.6;
     polygon-fill:#FFE292;
     }
+  [lnd_agency='US Forest Service'] {
+    line-color:#919191;
+    line-width:0.5;
+    polygon-opacity:0.6;
+    polygon-fill:#CCE8D2;
+    }
 }
 
 
@@ -107,6 +132,12 @@ Map /*{
 
 
 #RoadsHazardous {
-  line-width:1;
-  line-color:#168;
+    ::casing {
+    line-width:4;
+    line-color:#fbff00;
+    }
+    ::fill {
+    line-width:3;
+    line-color:#ff0000;
+    }
 }
