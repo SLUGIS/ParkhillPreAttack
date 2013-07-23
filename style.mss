@@ -23,6 +23,10 @@ Map {
 
 
 #ICS_points {
+  [type='Safe Refuge'] {
+    marker-file: url('http://preattacks.s3.amazonaws.com/SafeRefuge.png');
+    marker-transform: scale(3,3);
+    }
   marker-width:6;
   marker-fill:#f45;
   marker-line-color:#813;
@@ -32,34 +36,43 @@ Map {
 
 #ICS_polygons {
   [name='Behlman Plan'] {
-    line-color:#faff00;
+    line-color:#fbff00;
 	line-width:3.0;
 	text-name:[name];
-	text-face-name:'Century Gothic Bold';
+	text-face-name:'Ubuntu Bold';
     text-fill:#FFFF73;
     text-halo-fill:#4E4E4E;
     text-halo-radius:2;
 	text-size:12;
   }
   [name='Salinas Plan'] {
-    line-color:#ff6600;
+    line-color:#FFAD00;
 	line-width:3.0;
 	text-name:[name];
-	text-face-name:'Century Gothic Bold';
+	text-face-name:'Ubuntu Bold';
+    text-halo-fill:#4E4E4E;
+    text-fill:#FFAD00;
+    text-halo-radius:2;
 	text-size:12;
   }
   [name='Huer Huero Plan'] {
     line-color:#3692ca;
 	line-width:3.0;
 	text-name:[name];
-	text-face-name:'Century Gothic Bold';
-	text-size:12;
+	text-face-name:'Ubuntu Bold';
+    text-halo-fill:#4E4E4E;
+    text-fill:#73B5FF;
+	text-halo-radius:2;
+    text-size:12;
   }
   [name='Las Pilitas Plan'] {
-    line-color:#ae8;
+    line-color:#a9ed87;
 	line-width:3.0;
 	text-name:[name];
-	text-face-name:'Century Gothic Bold';
+	text-face-name:'Ubuntu Bold';
+    text-halo-fill:#4E4E4E;
+    text-fill:#a9ed87;
+    text-halo-radius:2;
 	text-size:12;
   }
 }
@@ -75,8 +88,21 @@ Map {
 
 
 #PowerLines {
-  line-width:1;
-  line-color:#168;
+  ::offset {
+    line-offset: 3;
+    line-dasharray: 6, 2, 2, 2;
+    line-width:1;
+    line-color:#000;
+    }
+  ::case {
+      line-width:3;
+      line-color:#fbff00;
+    }
+  ::normal {
+    line-dasharray: 6, 2, 2, 2;
+    line-width:1;
+    line-color:#000;
+    }
 }
 
 
