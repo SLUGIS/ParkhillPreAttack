@@ -1,4 +1,4 @@
-Map {
+Map /*{
   background-color: #b8dee6;
 }
 
@@ -9,7 +9,7 @@ Map {
     line-join: round;
   }
   polygon-fill: #fff;
-}
+}*/
 
 #Gates {
   marker-file: url('http://preattacks.s3.amazonaws.com/gate.png');
