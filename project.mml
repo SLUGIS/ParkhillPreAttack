@@ -36,6 +36,24 @@
       }
     },
     {
+      "geometry": "linestring",
+      "extent": [
+        -120.85444001300002,
+        35.2621362285,
+        -119.450824246,
+        35.4034385545
+      ],
+      "id": "PowerLines",
+      "class": "",
+      "Datasource": {
+        "file": "https://raw.github.com/SLUGIS/slugisdata/master/CountywidePreAttack/PowerLinesParkhill.geojson"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "PowerLines"
+    },
+    {
       "geometry": "polygon",
       "extent": [
         -120.585040712,
@@ -54,24 +72,6 @@
       "name": "LND_SurfaceEstate"
     },
     {
-      "geometry": "polygon",
-      "extent": [
-        -120.58085597699998,
-        35.3475745474,
-        -120.435273889,
-        35.4377008364
-      ],
-      "id": "ICS_polygons",
-      "class": "",
-      "Datasource": {
-        "file": "https://raw.github.com/SLUGIS/slugisdata/master/CountywidePreAttack/ICS_polygons.geojson"
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "ICS_polygons"
-    },
-    {
       "geometry": "linestring",
       "extent": [
         -120.56205956400001,
@@ -88,6 +88,24 @@
       "srs": "",
       "advanced": {},
       "name": "ICS_lines"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        -120.533740709,
+        35.3686135869,
+        -120.449148176,
+        35.4278944388
+      ],
+      "id": "RoadsHazardous",
+      "class": "",
+      "Datasource": {
+        "file": "https://raw.github.com/SLUGIS/slugisdata/master/CountywidePreAttack/RoadsHazardousParkhill.geojson"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "RoadsHazardous"
     },
     {
       "geometry": "point",
@@ -126,48 +144,30 @@
       "name": "ICS_points"
     },
     {
-      "geometry": "linestring",
+      "geometry": "polygon",
       "extent": [
-        -120.85444001300002,
-        35.2621362285,
-        -119.450824246,
-        35.4034385545
+        -120.58085597699998,
+        35.3475745474,
+        -120.435273889,
+        35.4377008364
       ],
-      "id": "PowerLines",
+      "id": "ICS_polygons",
       "class": "",
       "Datasource": {
-        "file": "https://raw.github.com/SLUGIS/slugisdata/master/CountywidePreAttack/PowerLinesParkhill.geojson"
+        "file": "https://raw.github.com/SLUGIS/slugisdata/master/CountywidePreAttack/ICS_polygons.geojson"
       },
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "PowerLines"
-    },
-    {
-      "geometry": "linestring",
-      "extent": [
-        -120.533740709,
-        35.3686135869,
-        -120.449148176,
-        35.4278944388
-      ],
-      "id": "RoadsHazardous",
-      "class": "",
-      "Datasource": {
-        "file": "https://raw.github.com/SLUGIS/slugisdata/master/CountywidePreAttack/RoadsHazardousParkhill.geojson"
-      },
-      "srs-name": "autodetect",
-      "srs": "",
-      "advanced": {},
-      "name": "RoadsHazardous"
+      "name": "ICS_polygons"
     }
   ],
   "scale": 1,
   "metatile": 2,
-  "_basemap": "mapbox.mapbox-streets",
+  "_basemap": "slugis.map-n849blif",
   "name": "ParkhillPreAttack",
   "description": "This is the Parkhill Area PreAttack Plan, ported to TileMill/MapBox",
   "attribution": "CAL FIRE / San Luis Obispo County Fire",
   "legend": "",
-  "version": "0.1.2"
+  "version": "0.1.3"
 }

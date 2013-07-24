@@ -55,8 +55,15 @@ Map /*{
 
 #ICS_polygons {
   [name='Behlman Plan'] {
-    line-color:#fbff00;
-	line-width:3.0;
+    ::fill {
+      line-color:#fbff00;
+	  line-width:1;
+      }
+    ::casing {
+      line-color:#fbff00;
+      line-width:5;
+      line-opacity:0.25;
+      }
 	text-name:[name];
 	text-face-name:'Ubuntu Bold';
     text-fill:#FFFF73;
@@ -65,8 +72,15 @@ Map /*{
 	text-size:12;
   }
   [name='Salinas Plan'] {
-    line-color:#FFAD00;
-	line-width:3.0;
+    ::fill {
+      line-color:#FFAD00;
+      line-width:1;
+      }
+    ::casing {
+      line-color:#FFAD00;
+	  line-width:5;
+      line-opacity:0.25;
+      }
 	text-name:[name];
 	text-face-name:'Ubuntu Bold';
     text-halo-fill:#4E4E4E;
@@ -75,8 +89,15 @@ Map /*{
 	text-size:12;
   }
   [name='Huer Huero Plan'] {
-    line-color:#3692ca;
-	line-width:3.0;
+    ::fill {
+      line-color:#3692ca;
+      line-width:1;
+	  }
+    ::casing {
+      line-color:#3692ca;
+      line-width:5;      
+      line-opacity:0.25;
+      }
 	text-name:[name];
 	text-face-name:'Ubuntu Bold';
     text-halo-fill:#4E4E4E;
@@ -85,9 +106,16 @@ Map /*{
     text-size:12;
   }
   [name='Las Pilitas Plan'] {
-    line-color:#a9ed87;
-	line-width:3.0;
-	text-name:[name];
+    ::fill {
+      line-color:#a9ed87;
+	  line-width:1;
+      }
+    ::casing {
+      line-color:#a9ed87;
+	  line-width:5;
+      line-opacity:0.25;
+	  }
+    text-name:[name];
 	text-face-name:'Ubuntu Bold';
     text-halo-fill:#4E4E4E;
     text-fill:#a9ed87;
@@ -135,9 +163,11 @@ Map /*{
     ::casing {
     line-width:4;
     line-color:#fbff00;
+    line-opacity:0.6;
     }
     ::fill {
     line-width:3;
     line-color:#ff0000;
+    line-opacity:0.6;
     }
 }
