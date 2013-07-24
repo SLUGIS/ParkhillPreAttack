@@ -1,9 +1,9 @@
 {
   "bounds": [
-    -120.646,
-    35.3042,
-    -120.3878,
-    35.4847
+    -120.6175,
+    35.3309,
+    -120.4094,
+    35.4485
   ],
   "center": [
     -120.5135,
@@ -169,5 +169,5 @@
   "description": "This is the Parkhill Area PreAttack Plan, ported to TileMill/MapBox",
   "attribution": "CAL FIRE / San Luis Obispo County Fire",
   "legend": "",
-  "version": "0.1.0"
+  "version": "0.1.1"
 }
