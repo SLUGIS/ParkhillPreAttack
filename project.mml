@@ -169,5 +169,5 @@
   "description": "This is the Parkhill Area PreAttack Plan, ported to TileMill/MapBox",
   "attribution": "CAL FIRE / San Luis Obispo County Fire",
   "legend": "",
-  "version": "0.1.1"
+  "version": "0.1.2"
 }
